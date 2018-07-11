@@ -8,7 +8,6 @@ defmodule ConvertMD do
   def main(args) do
     {opts, params, _} = OptionParser.parse args, switches: [target: :string], aliases: [t: :target]
 
-
     {input_directory, output_directory} = params
     |> get_input_directory
     |> get_output_directory(opts)

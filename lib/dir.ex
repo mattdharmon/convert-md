@@ -2,6 +2,9 @@ defmodule ConvertMD.Dir do
 
   alias ConvertMD.PDF
 
+  @doc """
+    
+  """
   def parse_dir(dir \\ ".", output \\ ".") do
     mkdir output
 
